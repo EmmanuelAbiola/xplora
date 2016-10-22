@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+    <!--This simply includes a toolbar layout that’s provided as part of the starter project into the current layout.
+    Now you need to make a similar change to the detail activity’s layout.-->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/list"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/light_gray"
+      android:divider="@null"
+      android:listSelector="@android:color/transparent"/>
+
+</LinearLayout>
